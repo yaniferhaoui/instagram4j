@@ -14,8 +14,11 @@ public class Device {
 			 * B01C5OIINO
 			 * https://www.handsetdetection.com/properties/devices/Samsung/SM-G935F
 			 */
-			new Device("23", "6.0.1", "640dpi", "1440x2560", "samsung", "SM-G935F", "hero2lte", "samsungexynos8890"),
-
+			//new Device("23", "6.0.1", "640dpi", "1440x2560", "samsung", "SM-G935F", "hero2lte", "samsungexynos8890"),
+			
+			
+			new Device("28", "9.1", "480dpi", "1080x2280", "HUAWEI", "ANE-LX1", "HWANE", "hi6250"),
+			
 			/*
 			 * OnePlus 3T. Released: November 2016.
 			 * https://www.amazon.com/OnePlus-A3010-64GB-Gunmetal-International/dp/
