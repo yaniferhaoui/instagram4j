@@ -33,7 +33,7 @@ import org.brunocvcunha.instagram4j.util.InstagramGenericUtil;
 
 import lombok.Builder;
 import lombok.NonNull;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Direct-share request.
@@ -41,7 +41,7 @@ import lombok.extern.log4j.Log4j;
  * @author Evgeny Bondarenko (evgbondarenko@gmail.com)
  *
  */
-@Log4j
+@Log4j2
 @Builder
 public class InstagramDirectShareRequest extends InstagramRequest<StatusResult> {
 	@NonNull

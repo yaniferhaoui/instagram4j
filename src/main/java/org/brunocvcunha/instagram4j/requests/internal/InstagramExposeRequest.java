@@ -15,15 +15,17 @@
  */
 package org.brunocvcunha.instagram4j.requests.internal;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 import org.brunocvcunha.instagram4j.requests.InstagramPostRequest;
 import org.brunocvcunha.instagram4j.requests.payload.StatusResult;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Expose Request
@@ -32,7 +34,7 @@ import java.util.Map;
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramExposeRequest extends InstagramPostRequest<StatusResult> {
     @Override
     public String getUrl() {

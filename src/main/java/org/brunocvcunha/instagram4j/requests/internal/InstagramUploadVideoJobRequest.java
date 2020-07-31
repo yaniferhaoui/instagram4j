@@ -31,14 +31,14 @@ import org.brunocvcunha.instagram4j.requests.payload.StatusResult;
 import org.brunocvcunha.inutils4j.MyStreamUtils;
 
 import lombok.AllArgsConstructor;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Upload photo job request
  * @author Bruno Candido Volpato da Cunha
  *
  */
-@Log4j
+@Log4j2
 @AllArgsConstructor
 public class InstagramUploadVideoJobRequest extends InstagramRequest<StatusResult> {
 

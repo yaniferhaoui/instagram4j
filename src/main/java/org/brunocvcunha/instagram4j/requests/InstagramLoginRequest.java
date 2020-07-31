@@ -15,12 +15,14 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
 import org.brunocvcunha.instagram4j.requests.payload.InstagramLoginPayload;
 import org.brunocvcunha.instagram4j.requests.payload.InstagramLoginResult;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Login Request
@@ -29,7 +31,7 @@ import org.brunocvcunha.instagram4j.requests.payload.InstagramLoginResult;
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramLoginRequest extends InstagramPostRequest<InstagramLoginResult> {
 
     private InstagramLoginPayload payload;

@@ -15,14 +15,16 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
-import org.brunocvcunha.instagram4j.requests.payload.InstagramGetCurrentUserProfileResult;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import org.brunocvcunha.instagram4j.requests.payload.InstagramGetCurrentUserProfileResult;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Get details about the currently logged in account.
@@ -30,7 +32,7 @@ import java.util.Map;
  * @author Alexander Kohonovsky
  * @since 2019-04-28
  */
-@Log4j
+@Log4j2
 @RequiredArgsConstructor
 public class InstagramGetCurrentUserProfileRequest extends InstagramPostRequest<InstagramGetCurrentUserProfileResult> {
 

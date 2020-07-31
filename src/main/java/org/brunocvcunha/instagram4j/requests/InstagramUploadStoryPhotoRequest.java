@@ -15,6 +15,7 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
@@ -36,7 +37,7 @@ import org.brunocvcunha.instagram4j.storymetadata.StoryMetadata;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * InstagramStoryPhotoUploadRequest
@@ -45,7 +46,7 @@ import lombok.extern.log4j.Log4j;
  */
 @AllArgsConstructor
 @RequiredArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramUploadStoryPhotoRequest extends InstagramPostRequest<InstagramConfigureStoryResult> {
 
     @NonNull

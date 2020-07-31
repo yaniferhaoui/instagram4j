@@ -25,7 +25,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Sync Features Request
@@ -34,7 +34,7 @@ import lombok.extern.log4j.Log4j;
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramZeroRatingTokenRequest extends InstagramPostRequest<StatusResult> {
 
     @Override

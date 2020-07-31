@@ -15,12 +15,14 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
 import org.brunocvcunha.instagram4j.requests.payload.InstagramLoginResult;
 import org.brunocvcunha.instagram4j.requests.payload.InstagramLoginTwoFactorPayload;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Login TwoFactorRequest
@@ -29,7 +31,7 @@ import org.brunocvcunha.instagram4j.requests.payload.InstagramLoginTwoFactorPayl
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramLoginTwoFactorRequest extends InstagramPostRequest<InstagramLoginResult> {
 
     private InstagramLoginTwoFactorPayload payload;

@@ -15,16 +15,16 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.brunocvcunha.instagram4j.requests.payload.StatusResult;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Unblock Request
@@ -33,7 +33,7 @@ import lombok.extern.log4j.Log4j;
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramUnblockRequest extends InstagramPostRequest<StatusResult> {
 
     private long userId;

@@ -15,6 +15,7 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -42,14 +43,14 @@ import org.bytedeco.javacv.Java2DFrameConverter;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Upload Video request
  * @author Bruno Candido Volpato da Cunha
  *
  */
-@Log4j
+@Log4j2
 @AllArgsConstructor
 @RequiredArgsConstructor
 public class InstagramUploadVideoRequest extends InstagramRequest<StatusResult> {

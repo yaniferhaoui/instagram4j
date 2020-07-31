@@ -15,10 +15,11 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
+import org.brunocvcunha.instagram4j.requests.payload.InstagramFriendshipStatus;
+
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
-import org.brunocvcunha.instagram4j.requests.payload.InstagramFriendshipStatus;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Request for getting a user's friendship status
@@ -26,7 +27,7 @@ import org.brunocvcunha.instagram4j.requests.payload.InstagramFriendshipStatus;
  * @author Akhmad Syaikhul Hadi (akhmad.hadi@gmail.com)
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramGetFriendshipRequest extends InstagramGetRequest<InstagramFriendshipStatus> {
     private long userId;
 

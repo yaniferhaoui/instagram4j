@@ -19,7 +19,7 @@ import org.brunocvcunha.instagram4j.requests.payload.InstagramGetMediaLikersResu
 
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Like Request
@@ -28,7 +28,7 @@ import lombok.extern.log4j.Log4j;
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramGetMediaLikersRequest extends InstagramGetRequest<InstagramGetMediaLikersResult> {
 
     private long mediaId;

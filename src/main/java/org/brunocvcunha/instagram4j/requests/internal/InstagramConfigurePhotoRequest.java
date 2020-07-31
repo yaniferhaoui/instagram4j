@@ -15,8 +15,6 @@
  */
 package org.brunocvcunha.instagram4j.requests.internal;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.awt.image.BufferedImage;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
@@ -26,9 +24,11 @@ import org.brunocvcunha.instagram4j.InstagramConstants;
 import org.brunocvcunha.instagram4j.requests.InstagramPostRequest;
 import org.brunocvcunha.instagram4j.requests.payload.InstagramConfigurePhotoResult;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Like Request
@@ -37,7 +37,7 @@ import lombok.extern.log4j.Log4j;
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramConfigurePhotoRequest extends InstagramPostRequest<InstagramConfigurePhotoResult> {
 
     BufferedImage image;

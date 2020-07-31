@@ -25,14 +25,14 @@ import org.apache.http.util.EntityUtils;
 import org.brunocvcunha.instagram4j.InstagramConstants;
 import org.brunocvcunha.instagram4j.util.InstagramHashUtil;
 
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * 
  * @author brunovolpato
  *
  */
-@Log4j
+@Log4j2
 public abstract class InstagramPostRequest<T> extends InstagramRequest<T> {
 
     @Override

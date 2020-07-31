@@ -27,7 +27,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Get Friendships Request
@@ -36,7 +36,7 @@ import lombok.extern.log4j.Log4j;
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramGetFriendshipsRequest extends InstagramPostRequest<InstagramGetFriendshipsResult> {
 
     @NonNull

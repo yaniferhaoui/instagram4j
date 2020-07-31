@@ -36,7 +36,7 @@ import org.brunocvcunha.instagram4j.requests.payload.StatusResult;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * InstagramUploadAlbumRequest
@@ -45,7 +45,7 @@ import lombok.extern.log4j.Log4j;
  *
  */
 
-@Log4j
+@Log4j2
 @RequiredArgsConstructor
 public class InstagramUploadAlbumRequest extends InstagramPostRequest<InstagramConfigureAlbumResult> {
     @NonNull

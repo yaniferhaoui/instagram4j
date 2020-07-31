@@ -15,14 +15,16 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
-import org.brunocvcunha.instagram4j.requests.payload.InstagramPostCommentResult;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import org.brunocvcunha.instagram4j.requests.payload.InstagramPostCommentResult;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Comment Post Request
@@ -31,7 +33,7 @@ import java.util.Map;
  *
  */
 @AllArgsConstructor
-@Log4j
+@Log4j2
 public class InstagramMutePostAndStoryRequest extends InstagramPostRequest<InstagramPostCommentResult> {
 
     private Long userId;

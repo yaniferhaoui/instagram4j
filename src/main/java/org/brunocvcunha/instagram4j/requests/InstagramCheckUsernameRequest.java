@@ -15,17 +15,16 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.brunocvcunha.instagram4j.requests.payload.InstagramCheckUsernameResult;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
 
 /**
  * Sync Features Request
@@ -34,7 +33,6 @@ import lombok.extern.log4j.Log4j;
  *
  */
 @AllArgsConstructor
-@Log4j
 public class InstagramCheckUsernameRequest extends InstagramPostRequest<InstagramCheckUsernameResult> {
 
     @NonNull

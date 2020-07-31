@@ -15,17 +15,19 @@
  */
 package org.brunocvcunha.instagram4j.requests;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.commons.lang3.StringUtils;
 import org.brunocvcunha.instagram4j.requests.payload.InstagramGetCurrentUserProfileResult;
 import org.brunocvcunha.instagram4j.requests.payload.InstagramUserGenderEnum;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.SneakyThrows;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * Edit instagram profile request.
@@ -39,7 +41,7 @@ import java.util.Map;
  * @since 2019-04-27
  */
 @Getter
-@Log4j
+@Log4j2
 public class InstagramEditProfileRequest extends InstagramPostRequest<InstagramGetCurrentUserProfileResult> {
 
     /**

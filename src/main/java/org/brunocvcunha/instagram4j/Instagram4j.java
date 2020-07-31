@@ -52,7 +52,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.SneakyThrows;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
 /**
  * 
@@ -60,7 +60,7 @@ import lombok.extern.log4j.Log4j;
  * @author Bruno Candido Volpato da Cunha
  *
  */
-@Log4j
+@Log4j2
 public class Instagram4j implements Serializable {
     
     @Getter
